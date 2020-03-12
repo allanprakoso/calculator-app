@@ -7,10 +7,15 @@ class calculator
 		   
         Console.Title = "Aplikasi Calculator";
 			
-            int a = 10;
-            int b = 6;
-        Console.WriteLine("Hasil Penambahan" + a + " + " + b + " = " + penambahan(a, b));
-        Console.WriteLine("Hasil Pengurangan {0} - {1} = {2}", a, b, pengurangan(a, b));
+        Console.WriteLine("Menu Aplikasi\n");
+        Console.WriteLine("1. Penjumlahan \n2. Pengurangan \n3. Perkalian \n4. Pembagian");
+        Console.Write("Pilihan Menu: ");
+        int pilihan = int.Parse(Console.ReadLine());
+
+        Console.Write("Nilai a: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Nilai b: ");
+        int b = int.Parse(Console.ReadLine());
 	   }
 	   
 	   static int penambahan(int a, int b)
